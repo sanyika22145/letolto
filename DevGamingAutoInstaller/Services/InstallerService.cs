@@ -1,6 +1,11 @@
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.IO.Compression;
 using System.Net.Http;
+using System.Threading;
+using System.Threading.Tasks;
 using DevGamingAutoInstaller.Models;
 using Microsoft.Win32;
 
