@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Visual Studio Code",
+    "category": "Fejlesztői eszközök",
+    "downloadUrl": "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64",
+    "silentArgs": "/verysilent /suppressmsgboxes /norestart",
+    "requiresAdmin": true,
+    "detectDisplayNameContains": "Microsoft Visual Studio Code"
+  },
+  {
+    "name": "Python",
+    "category": "Fejlesztői eszközök",
+    "downloadUrl": "https://www.python.org/ftp/python/3.12.2/python-3.12.2-amd64.exe",
+    "silentArgs": "/quiet InstallAllUsers=1 PrependPath=1 Include_test=0",
+    "requiresAdmin": true,
+    "detectDisplayNameContains": "Python 3.",
+    "postInstallCommands": [
+      "py -m pip install --upgrade pip",
+      "py -m pip install numpy requests flask"
+    ]
+  },
+  {
+    "name": "Steam",
+    "category": "Játék platformok",
+    "downloadUrl": "https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe",
+    "silentArgs": "/S",
+    "requiresAdmin": true,
+    "detectDisplayNameContains": "Steam"
+  },
+  {
+    "name": "WSL",
+    "category": "Fejlesztői eszközök",
+    "installMethod": "SystemCommand",
+    "command": "wsl",
+    "commandArgs": "--install",
+    "requiresAdmin": true,
+    "detectFilePath": "C:\\Windows\\System32\\wsl.exe"
+  }
+]
